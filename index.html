@@ -1,0 +1,158 @@
+<!doctype html>
+
+<link rel="stylesheet" href="style.css">
+
+<html>
+<title>HomePage</title>
+    
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Logo -->
+    <img id="logo" src="Logo.png">
+
+<!-- Cart button-->
+   <a href="cart_page.html"><img id="carticon" src="cart.png"></a>  
+    
+<!-- Navigation Bar-->
+ <div class="large-nav"> 
+     
+      <a class="icon-nav"></a>
+         <ul>   
+        <li class="activepg">Home Page</li>
+        <li class="links"><a href="browse_page.html">Browse Page</a></li>
+        <li class="links"><a href="about_&_contact.html" target="_blank">About & Contact</a></li>
+        </ul>
+   
+     </div>
+               
+        <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><div></div><div></div><div></div></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class="bar" href="#home">Home</a>
+    <a class="bar" href="#about">Browse</a>
+    <a class="bar" href="#contact">About and Contact</a>
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+     
+        
+<br>
+<br>
+<br>
+<br>
+<br>
+        
+        </header> 
+<br> 
+    <body>
+        <br>
+        
+<!-- Slideshow -->    
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <img src="blue_silver_mermaid_cushion_slide.jpg" style="width:100%">
+        </div>
+
+    <div class="mySlides fade">
+        <img src="brushes_slide.jpg" style="width:100%">
+        </div>
+    
+     <div class="mySlides fade">
+        <img src="rings_slide.jpg" style="width:100%">
+        </div>
+
+    <div class="mySlides fade">
+        <img src="unicorn_pool_cup_slide.jpg" style="width:100%">
+        </div>
+    
+     <div class="mySlides fade">
+        <img src="green_hm_necklace_slide.jpg" style="width:100%">
+        </div>
+
+<!--arrows-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    
+<!--dots-->        
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+<br>
+        <div class="categoriesframe">
+            <a class="category" href="browse_page.html#Cushions"><img class="categories" src="blue_silver_mermaid_cushion_cat.jpg" width="180" height="100"></a>
+            
+            <a class="category" href="browse_page.html#Jewelry"><img class="categories" src="green_hm_necklace_cat.jpg" width="180" height="100"></a>
+            
+            <a class="category" href="browse_page.html#Accessories"><img class="categories" src="sunglasses_cat.jpg" width="180" height="100"></a>
+            
+            <a class="category" href="browse_page.html#Others"><img class="categories" src="slippers_cat.jpg" width="180" height="100"></a>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script rel="stylesheet" href="menu.js"></script>
+            </div>
+        </body>
+       
+<footer>Made By A Williams 2017 ©</footer> 
+    
+</html>
