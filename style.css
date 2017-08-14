@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+/*http://rqrwd.com*/
+
+html {
+    background-image: url(Background.jpg);
+    background-attachment: fixed;
+    font-family: 'Architects Daughter', cursive;
+    }
+
+
+body {
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    margin: auto;
+    background-color: darkorange;
+}
+
+header {
+    padding-top: 1.8%; 
+    margin-bottom: 18.1%;
+}
+
+#carticon {
+    padding: 0.90% 1.19%;
+    float: right;
+    display: inline;   
+}
+
+#logo {
+    padding-left: 0.6%;
+    float: left;
+    width: 20.47%;
+}
+
+
+.dropdown {
+    visibility: hidden;
+}
+
+
+/*Navigation Bar*/
+ul  {
+  display: inline-block;
+  float: right;
+  padding-left: 0;
+  padding-right: 0; 
+  margin-top: 1%;    
+  width:  78%;
+  border: 2px solid black;  
+  border-radius: 10px ;
+  background-image: -webkit-linear-gradient(top, #f296e4, #7c87de);
+  background-image: -moz-linear-gradient(top, #f296e4, #7c87de);
+  background-image: -o-linear-gradient(top, #f296e4, #7c87de);
+  background-image: linear-gradient(to bottom, #f296e4, #7c87de);
+  color: white;
+    visibility: visible;
+} 
+    
+li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 3% 0%;
+    width: 33.33%;
+    border: 1px solid black;  
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(top, #fc7de9, #7c87de);
+    background-image: -moz-linear-gradient(top, #fc7de9, #7c87de);
+    background-image: -o-linear-gradient(top, #fc7de9, #7c87de);
+    background-image: linear-gradient(to bottom, #fc7de9, #7c87de); 
+   
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 5% 10%; 
+        
+}
+
+.links:hover {
+  background-image: -webkit-linear-gradient(top, #7c87de, #f296e4);
+  background-image: -moz-linear-gradient(top, #7c87de, #f296e4);
+  background-image: -o-linear-gradient(top, #7c87de, #f296e4);
+  background-image: linear-gradient(to bottom, #7c87de, #f296e4);
+  
+}
+
+.activepg {
+  background-image: -webkit-linear-gradient(top, #fec6f8, #7c87de);
+  background-image: -moz-linear-gradient(top, #fec6f8, #7c87de);
+  background-image: -o-linear-gradient(top, #fec6f8, #7c87de);
+  background-image: linear-gradient(to bottom, #fec6f8, #7c87de);
+} 
+
+
+
+/*Slideshow*/
+* {box-sizing:border-box}
+.mySlides {
+    display:none;
+    border: 3px solid black;
+    margin-top: -160px;
+    margin-bottom: -5%;
+    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 0.2% 0.7%;
+  margin-top: -2.8%;
+  color: #20e5d9;
+  font-weight: bold;
+  font-size: 3.75em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 25px;
+  width: 25px;
+  margin: 30px 2px -1px 2px;
+  background-color: #bbb;
+  border: 2px outset white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #20e5d9;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 17.8%) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*Category images*/
+.categories {
+    display: inline;
+    opacity: 0.85;
+    width: 23%;
+    margin: .6% 11.7% 0 13%;
+    border: 1px solid black;
+    
+}
+
+.categories:hover {
+    opacity: 1;
+    box-shadow:  4px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.categoriesframe {
+    margin: 0 20px;
+}
+
+footer  {
+    height: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #a6ade6;
+    width: 50%;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    margin-top: 1%;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+
+    
+}
+
+h2 {
+    font: 40px solid black;
+    font-family: 'Architects Daughter', cursive; 
+    text-align: center;
+    text-decoration: underline;
+}
+
+.browseimg {
+    float: left;
+    margin-right: 3%;
+    border: 1px solid black;
+}
+
+.browseimg:hover, catpages:hover {
+    box-shadow:  4px 8px 25px rgba(0, 0, 0, 0.2);
+}
+.description {
+    font-size: 1.5em;
+    margin: 0 0 0 50%;
+    padding: 7% 0;
+}
+
+.browsedisp {
+    margin-bottom: 10px;
+}
+
+.acpg {
+    font: 180% solid black;
+    font-family: 'Architects Daughter', cursive; 
+}
+
+.acinput1 {
+    width: 47%;
+    line-height: 62px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5625em;
+    padding-left: 6px;
+}
+
+.acinput2 {
+    float: right;
+    width: 47%;
+    line-height: 62px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5625em;
+    padding-left: 6px;
+}
+
+.acinput3 {
+    width: 100%;
+    line-height: 62px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5625em;
+    padding-left: 6px;
+}
+
+.message {
+    width: 100%;
+    height: 237px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5625em;
+    font-family: sans-serif;
+    padding-left: 6px;
+    padding-top: 10px;
+}
+
+.submitbutton {
+    font-size: 1.875em;
+    font-family: 'Architects Daughter', cursive; 
+    background-color: #20e5d9;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 18%;
+    padding: 1% 0;
+    float: right;
+    
+}
+
+.catpages {
+    border: 1px solid black;
+}
+
+.catpages:hover {
+    box-shadow:  4px 8px 25px rgba(0, 0, 0, 0.2); 
+    transform:scale(1.6,1.6);
+	transform-origin:0 0;
+}
+
+.scroll {
+    background-color: gray;
+    color: aliceblue;
+    font-size: 0.6875em;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 13.8%;
+    padding: 10px 0;
+    margin-right: 8px;
+    
+}
+
+.scroll:hover {
+    background-color: gray;
+    color: #20e5d9;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 0px;
+    
+}
+
+.addtocart {
+    float: right;
+    background-color: gray;
+    color: aliceblue;
+    font-size: 0.6875em;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 13.8%;
+    padding: 10px 0;
+    margin-right: 8px;
+    
+}
+
+.cat:hover {
+    border-color: aqua;
+}
+
+
+/*
+
+
+
+
+
+*/
+  
+/*Decreased screen 1 (fixing nav size and categories*/
+@media screen and (max-width: 1261px) {
+    
+    body {
+        background-color: blue;
+        height: 100%;
+        width: 50%;
+        
+    }
+    
+    header {
+        height: 140px;
+    }
+    
+    ul  {
+  width:  78%;
+} 
+    
+li {
+    padding: 3% 0%;
+    width: 33.3%;
+    font-size: 13px;
+   }
+
+    .dot {
+        margin-top: 18px;
+  height: 23px;
+  width: 23px;
+    }
+    
+    /*Category images*/
+.categories {
+    width: 24.7%;
+    margin: .6% 11.7% 0 13%;
+    
+}
+
+.categoriesframe {
+    margin: 0 
+}
+    
+    footer {
+        font-family: 'Slabo 23px', serif;
+        width: 50%
+    }    
+    
+}
+/*Decreased screen 2 (Nav) */
+@media screen and (max-width: 1075px) {
+    
+    body {
+        background-color: greenyellow;
+        width: 55%;
+    }
+    
+    header {
+        height: 130px;
+    }
+    
+    li {
+        font-size: 11px;
+}
+    
+    
+.categories {
+    width: 30%;
+    margin: .6% 0 0 13%;
+    
+}
+    .mySlides {
+        margin-top: -160px;
+    }
+    .dot {
+        
+    }
+    footer {
+        width: 55%;
+    }
+    }
+
+@media screen and (max-width: 875px) {
+    
+    body {
+        background-color: darkviolet;
+    }
+    
+    #carticon {
+        width: 68px;
+        height: 38px;
+        
+    }
+    
+    ul  {
+  width:  78%;
+} 
+    
+li {
+    width: 33.3%;
+    font-size: 10px;
+    margin-bottom: 0;
+   }
+
+    .mySlides {
+    display:none;
+    border: 3px solid black;
+    margin-top: -60px;
+    margin-bottom: -25px;
+    
+}
+    .dot {
+        width: 20px;
+        height: 20px;
+    }
+    .categories {
+    width: 36%;
+    margin: .6% 0 0 9%;
+    
+}
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    body {
+        background-color: aqua;
+        
+        width: 68%;
+    }
+    
+    .mySlides {
+    margin-top: -160px;
+        }
+    
+    footer {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        background-color: yellow;
+        width: 100%;
+    }
+    
+    ul {
+        visibility: hidden;
+        margin: 0;
+    }
+    
+    #logo {
+        margin: 0 -200px 0 8px;
+    }
+    
+    #carticon {
+        margin-left: 5px;
+    }
+        
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+    margin-left: 30px;
+    margin-right: 90px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 490px;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+}
+
+.mySlides {
+    margin-top: -130px;
+}
+
+@media screen and (max-width: 400px) {
+    
+    body {
+        background-color: teal;
+    }
+    
+    .categories {
+       position: relative;
+        display: block;
+        width: 50%;
+        margin: 5px 0;
+    }
+    
+    .categoriesframe {
+        margin: 0 0;
+    }
+    
+    .category {
+        width: 50%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+--
