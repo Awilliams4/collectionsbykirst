@@ -8,7 +8,6 @@ html {
     font-family: 'Architects Daughter', cursive;
     }
 
-
 body {
     height: 100%;
     width: 50%;
@@ -19,8 +18,10 @@ body {
 
 header {
     padding-top: 1.8%; 
-    margin-bottom: 18.1%;
-}
+    margin-bottom: 20%;
+    height: 140px;
+    
+    }
 
 #carticon {
     padding: 0.90% 1.19%;
@@ -34,11 +35,9 @@ header {
     width: 20.47%;
 }
 
-
 .dropdown {
     visibility: hidden;
 }
-
 
 /*Navigation Bar*/
 ul  {
@@ -72,7 +71,6 @@ li {
     background-image: -moz-linear-gradient(top, #fc7de9, #7c87de);
     background-image: -o-linear-gradient(top, #fc7de9, #7c87de);
     background-image: linear-gradient(to bottom, #fc7de9, #7c87de); 
-   
 }
 
 li a {
@@ -149,7 +147,7 @@ li a {
   cursor:pointer;
   height: 25px;
   width: 25px;
-  margin: 30px 2px -1px 2px;
+  margin: 20px 2px -10px 2px;
   background-color: #bbb;
   border: 2px outset white;
   border-radius: 50%;
@@ -189,10 +187,9 @@ li a {
 .categories {
     display: inline;
     opacity: 0.85;
-    width: 23%;
-    margin: .6% 11.7% 0 13%;
+    width: 30%;
+    margin: 0 9.7%;
     border: 1px solid black;
-    
 }
 
 .categories:hover {
@@ -200,24 +197,18 @@ li a {
     box-shadow:  4px 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.categoriesframe {
-    margin: 0 20px;
-}
-
 footer  {
-    height: 2%;
+    width: 100%;
+    text-align: center;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #a6ade6;
-    width: 50%;
-    text-align: center;
     font-family: 'Slabo 27px', serif;
-    margin-top: 1%;
+    /*
     position: absolute;
     bottom: 0;
     visibility: hidden;
-
-    
+    */
 }
 
 h2 {
@@ -362,19 +353,18 @@ h2 {
 */
   
 /*Decreased screen 1 (fixing nav size and categories*/
-@media screen and (max-width: 1261px) {
+@media screen and (min-width: 1076px) and (max-width: 1261px){
     
     body {
         background-color: blue;
         height: 100%;
         width: 50%;
-        
     }
     
     header {
-        height: 140px;
+        height: 105px
     }
-    
+        
     ul  {
   width:  78%;
 } 
@@ -409,16 +399,13 @@ li {
     
 }
 /*Decreased screen 2 (Nav) */
-@media screen and (max-width: 1075px) {
+@media screen and (min-width: 876px) and (max-width: 1075px) {
     
     body {
         background-color: greenyellow;
         width: 55%;
     }
     
-    header {
-        height: 130px;
-    }
     
     li {
         font-size: 11px;
@@ -441,7 +428,7 @@ li {
     }
     }
 
-@media screen and (max-width: 875px) {
+@media screen and (min-width: 801px) and (max-width: 875px) {
     
     body {
         background-color: darkviolet;
@@ -482,7 +469,7 @@ li {
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 601px) and (max-width: 800px) {
     
     body {
         background-color: aqua;
@@ -499,7 +486,7 @@ li {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 40px) and (max-width: 600px) {
     
     body {
         background-color: yellow;
@@ -526,7 +513,7 @@ li {
     font-size: 16px;
     border: none;
     cursor: pointer;
-
+    border-radius: 50%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -538,8 +525,8 @@ li {
     position: relative;
     display: inline-block;
     visibility: visible;
-    margin-left: 30px;
-    margin-right: 90px;
+    margin-right: 100px;
+    margin-top: -55px;
     
 }
 
@@ -560,24 +547,50 @@ li {
     text-decoration: none;
     display: block;
     text-align: center;
-    width: 490px;
+    width: 300px;
+    
 }
 
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
+
+
+.bar {
+    width: 45px;
+    height: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .mySlides {
-    margin-top: -130px;
+    margin-top: -30px;
 }
 
-@media screen and (max-width: 400px) {
+.categories {
+    border: 3px solid red;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
     
     body {
         background-color: teal;
+        width: 100%;
     }
     
+    ul {
+        visibility: hidden;
+    }
+    
+    .dropbtn {
+        visibility: visible;
+    }
+    
+    .dropdown {
+        visibility: visible;
+    }
+
     .categories {
        position: relative;
         display: block;
@@ -591,8 +604,8 @@ li {
     
     .category {
         width: 50%;
-        
     }
+    
 }
 
 
