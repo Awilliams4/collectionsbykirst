@@ -2,35 +2,35 @@
 
 <link rel="stylesheet" href="style.css">
 <html>
-<title>Browse Page</title>   
+    <title>Browse Page</title>   
     
+    <header>
         
-<header>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Logo -->
+        <img id="logo" src="Logo.png" alt="Collections By Kirst">
+        
+        <!-- Cart button-->
+        <a href="cart_page.html"><img id="carticon" src="cart.png" alt="cart"></a>
     
-<!-- Logo -->
-   <img id="logo" src="Logo.png" alt="Collections By Kirst">
-
-<!-- Cart button-->
-   <a href="cart_page.html"><img id="carticon" src="cart.png" alt="cart"></a>
-    
-<!-- Navigation Bar -->
-    <ul >   
-    <li class="links"><a href="index.html">Home Page</a></li>
-    <li class="activepg">Browse Page</li>
-    <li class="links"><a href="about_&_contact.html" target="_blank">About & Contact</a></li>    
-    </ul>
-    
-    <!--DropDown Menu-->
+        <!-- Navigation Bar -->
+        <ul>   
+            <li class="links"><a href="index.html">Home Page</a></li>
+            <li class="activepg">Browse Page</li>
+            <li class="links"><a href="about_&_contact.html" target="_blank">About & Contact</a></li>   
+            </ul>
+        
+        <!--DropDown Menu-->
         <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="browse_page.html">Browse</a>
-    <a href="about_&_contact.html">About and Contact</a>
-  </div>
-</div>
-
+            <button onclick="myFunction()" class="dropbtn"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="browse_page.html">Browse</a>
+                <a href="about_&_contact.html">About and Contact</a>
+                </div>
+            </div>
+        
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -53,16 +53,21 @@ window.onclick = function(event) {
   }
 }
 </script>
-</header> 
- 
-<body>
-    
-    <a id="Cushions"><h2 id="cushions">Cushions</h2></a>
-<br>
-<a href="#Jewelry"><button class="scroll">Scroll to Jewelry</button></a><a href="#Accessories"><button class="scroll">Scroll to Accessories</button></a><a href="#Others"><button class="scroll">Scroll to Others</button></a>    
-<br>    
-<br>
-<br> 
+        </header> 
+    <body>
+        
+        <!--Gallery of cushions with their descriptions-->        
+        <a id="Cushions"><h2 id="cushions">Cushions</h2></a>
+        
+        <br>
+        
+        <!--Scrolling buttons-->
+        <a href="#Jewelry"><button class="scroll">Scroll to Jewelry</button></a><a href="#Accessories"><button class="scroll">Scroll to Accessories</button></a><a href="#More"><button class="scroll">Scroll to More</button></a>  
+        
+        <br>    
+        <br>
+        <br> 
+        
 <div class="browsedisp"><a id="browselink" href="mermaid_cushions.html"><img class="browseimg" src="blue_silver_mermaid_cushion_browse.jpg" alt="Blue Mermaid Cushion"></a>
 <p class="description">Mermaid Cushions. One minute black, the next silver. Click on the image for more colour options.</p>
 </div>    
@@ -73,20 +78,21 @@ window.onclick = function(event) {
 </div> 
 
 <br>    
-    <div class="browsedisp"><a href="skull_cushions.html"><img class="browseimg" src="black_skull1_cushion_browse.jpg" alt="Bluck Skull 1"></a>
+<div class="browsedisp"><a href="skull_cushions.html"><img class="browseimg" src="black_skull1_cushion_browse.jpg" alt="Bluck Skull 1"></a>
 <p class="description">Skull Cushions. Designs with "Day of the Dead"  patterns. Click on the image for more options.</p>
 </div>  
     
 <br>
-<a id="Jewelry"><h2>Jewelry</h2></a>
-    
-<br> 
-    <div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="green_hm_necklace_browse.jpg" alt="Home Made Necklace"></a>
+        <!--Gallery of jewelry with their descriptions--> 
+        <a id="Jewelry"><h2>Jewelry</h2></a>
+        
+<br>      
+<div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="green_hm_necklace_browse.jpg" alt="Home Made Necklace"></a>
 <p class="description">Emerald Hand made Necklaces. A beautifully hand crafted emerald crystal necklace.</p>
 </div>    
 
 <br>
-    <div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="mandela_necklace_browse.jpg" alt="Mandela Necklace"></a>
+<div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="mandela_necklace_browse.jpg" alt="Mandela Necklace"></a>
 <p class="description">Mandela Necklace. A beautiful and stylish necklace to wear with your outfit.</p>
 </div> 
 
@@ -96,7 +102,8 @@ window.onclick = function(event) {
 </div>     
     
 <br>
-    <a id="Accessories"><h2>Accessories</h2></a>
+        <!--Gallery of accessories with their descriptions--> 
+        <a id="Accessories"><h2>Accessories</h2></a>
     
 <br> 
 <div class="browsedisp"><img class="browseimg" src="rings_browse.jpg" alt="Rings">
@@ -112,8 +119,10 @@ window.onclick = function(event) {
 <div class="browsedisp"><img class="browseimg" src="back_earrings_browse.jpg" alt="Back Earings">
 <p class="description">Back Earrings. New and different fabulous earrings. Click the image for a silver design.</p>
 </div>  
-    
-    <a id="Others"><h2 id="more">Other</h2></a>
+
+<br>
+        <!--Gallery of more with their descriptions-->    
+        <a id="More"><h2 id="more">More</h2></a>
     
 <br> 
 <div class="browsedisp"><img class="browseimg" src="unicorn_pool_browse.jpg" alt="Unicorn Pool Cup">

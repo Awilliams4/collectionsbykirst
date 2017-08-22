@@ -1,35 +1,36 @@
 <!doctype html>
 
 <link rel="stylesheet" href="style.css">
+
 <html>
-<title>About and Contact Page</title>   
-            
-<header>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About and Contact Page</title> 
     
-<!-- Logo -->
-    <img id="logo" src="Logo.png">
-
-<!-- Cart button-->
-   <a href="cart_page.html"><img id="carticon" src="cart.png" ></a>  
-    
-<!-- Navigation Bar -->
-    <ul >   
-        <li class="links"><a href="index.html">Home Page</a></li>
-        <li class="links"><a href="browse_page.html">Browse Page</a></li>
-    <li class="activepg">About & Contact</li>    
-    </ul>
-    
-    <!--DropDown Menu-->
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Logo -->
+        <img id="logo" src="Logo.png">
+        
+        <!-- Cart button-->
+        <a href="cart_page.html"><img id="carticon" src="cart.png" ></a>  
+        
+        <!-- Navigation Bar -->
+        <ul >   
+            <li class="links"><a href="index.html">Home Page</a></li>
+            <li class="links"><a href="browse_page.html">Browse Page</a></li>
+            <li class="activepg">About & Contact</li>    
+            </ul>
+        
+        <!--DropDown Menu-->
         <div class="dropdown2">
-<button onclick="myFunction()" class="dropbtn"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="browse_page.html">Browse</a>
-    <a href="about_&_contact.html">About and Contact</a>
-  </div>
-</div>
-
+            <button onclick="myFunction()" class="dropbtn"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="browse_page.html">Browse</a>
+                <a href="about_&_contact.html">About and Contact</a>
+                </div>
+            </div>
+        
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -52,35 +53,37 @@ window.onclick = function(event) {
   }
 }
 </script>
-</header> 
-
-<body>
-<br>
-    <h2 id="aboutheader">About and Contact</h2>
+        </header> 
     
+    <body>
+        <br>
+        
+        <!--Small explanation paragraph-->
+        <h2 id="aboutheader">About and Contact</h2>
+        
         <p class="acpg">Need help with something?</p>
         <p class="acpg">Fill out this form and we'll get back to you soon.</p>
-
-
-        <form action="https://formspree.io/amandarobot@gmail.com"
-      method="POST">
-  
-  <input class="acinput1" type="text" name="firstandname" placeholder="Name" required>
-            <input  class="acinput2" type="text" name="Email" placeholder="Email" required>
-  <br>
-<br>            
-  <input class="acinput3" type="text" name="Phone No." placeholder="Phone" required>
-  
-  <br>
-            <br>
-  <textarea class="message" name="message" rows="10" cols="30" placeholder="Message:" required></textarea>
-            <br>
-  <input  class="submitbutton" type="submit" value="Submit">
-            
-
-</form> 
-
         
+       <!--Contact Form-->
+        
+        <form action="https://formspree.io/amandarobot@gmail.com"
+              method="POST">
+            
+            <input class="acinput1" type="text" name="Firstname" placeholder="Name" required>
+            <input  class="acinput2" type="text" name="Email" placeholder="Email" required>
+                    
+<br>
+<br>
+            <input class="acinput3" type="text" name="Phone No." placeholder="Phone" required>
+            
+<br>
+<br>
+            <textarea class="message" name="message" rows="10" cols="30" placeholder="Message:" required></textarea>
+<br>
+            <input  class="submitbutton" type="submit" value="Submit">
+            
+</form> 
+                
     </body>
   <br>
             <br>
