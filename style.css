@@ -331,13 +331,42 @@ h3 {
 
 .catpages {
     border: 1px solid black;
-    margin: 2% 0;
+    margin: 2% 2% 2% 0;
+    float: left;
 }
 
 .catpages:hover {
     box-shadow:  4px 8px 25px rgba(0, 0, 0, 0.2); 
     transform:scale(1.5,1.5);
 	transform-origin: 0 0;
+}
+
+#prodtxt {
+    font-size: 1.2em;
+    float: right;
+    margin: 0 0 2% 0;
+}
+
+.ordernumtxt {
+    font-size: 1.5em;
+    margin: 30% 0% 0% 0;
+    padding: 10% 0 0 0;
+    height: 100px
+}
+
+.ordergrp {
+    margin: 0 0 0; 
+    height: 100px;
+}
+
+#orderbtm {
+    height: 300px;
+}
+
+#orderbtm2 {
+    height: 500px;
+}
+    
 }
 
 /*Decreased screen, Screen 2*/
@@ -1029,7 +1058,7 @@ h3 {
     }
     
     .categories {
-        width: 65%;
+        width: 62%;
         margin: 5% 18%;
         height: 20%;
     }
@@ -1349,6 +1378,10 @@ h3 {
     #logo {
         width: 30%;
         padding-left: 7px;
+    }
+    
+    #carticon {
+        width: 20%;
     }
     
     ul {
