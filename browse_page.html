@@ -1,11 +1,11 @@
 <!doctype html>
 
 <link rel="stylesheet" href="style.css">
+
 <html>
-    <title>Browse Page</title>   
+<title>Browse Page</title>   
     
     <header>
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Logo -->
@@ -13,20 +13,20 @@
         
         <!-- Cart button-->
         <a href="cart_page.html"><img id="carticon" src="cart.png" alt="cart"></a>
-    
+        
         <!-- Navigation Bar -->
-        <ul>   
+        <ul> 
             <li class="links"><a href="index.html">Home Page</a></li>
             <li class="activepg">Browse Page</li>
-            <li class="links"><a href="about_&_contact.html" target="_blank">About & Contact</a></li>   
+            <li class="links"><a href="about_&_contact.html" target="_blank">About & Contact</a></li>
             </ul>
         
         <!--DropDown Menu-->
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn"><div class="bar"></div><div class="bar"></div><div class="bar"></div></button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="#home">Home</a>
-                <a href="browse_page.html">Browse</a>
+                <a href="index.html">Home</a>
+                <a href="#browse" id="activedrp">Browse</a>
                 <a href="about_&_contact.html">About and Contact</a>
                 </div>
             </div>
@@ -53,21 +53,17 @@ window.onclick = function(event) {
   }
 }
 </script>
-        </header> 
-    <body>
-        
-        <!--Gallery of cushions with their descriptions-->        
-        <a id="Cushions"><h2 id="cushions">Cushions</h2></a>
-        
-        <br>
-        
-        <!--Scrolling buttons-->
-        <a href="#Jewelry"><button class="scroll">Scroll to Jewelry</button></a><a href="#Accessories"><button class="scroll">Scroll to Accessories</button></a><a href="#More"><button class="scroll">Scroll to More</button></a>  
-        
-        <br>    
-        <br>
-        <br> 
-        
+</header> 
+ 
+<body>
+    
+    <a id="Cushions"><h2 id="cushions">Cushions</h2></a>
+<br>
+<a href="#Jewelry"><button class="scroll">Scroll to Jewelry</button></a><a href="#Accessories"><button class="scroll">Scroll to Accessories</button></a><a href="#Others"><button class="scroll">Scroll to Others</button></a>
+    
+<br>    
+<br>
+<br> 
 <div class="browsedisp"><a id="browselink" href="mermaid_cushions.html"><img class="browseimg" src="blue_silver_mermaid_cushion_browse.jpg" alt="Blue Mermaid Cushion"></a>
 <p class="description">Mermaid Cushions. One minute black, the next silver. Click on the image for more colour options.</p>
 </div>    
@@ -83,59 +79,55 @@ window.onclick = function(event) {
 </div>  
     
 <br>
-        <!--Gallery of jewelry with their descriptions--> 
-        <a id="Jewelry"><h2>Jewelry</h2></a>
-        
-<br>      
+<a id="Jewelry"><h2>Jewelry</h2></a>
+    
+<br> 
 <div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="green_hm_necklace_browse.jpg" alt="Home Made Necklace"></a>
 <p class="description">Emerald Hand made Necklaces. A beautifully hand crafted emerald crystal necklace.</p>
 </div>    
 
 <br>
-<div class="browsedisp"><a href="home_made_necklaces.html"><img class="browseimg" src="mandela_necklace_browse.jpg" alt="Mandela Necklace"></a>
+<div class="browsedisp"><a href="mandela_necklace.html"><img class="browseimg" src="mandela_necklace_browse.jpg" alt="Mandela Necklace"></a>
 <p class="description">Mandela Necklace. A beautiful and stylish necklace to wear with your outfit.</p>
 </div> 
 
 <br>    
-<div class="browsedisp"><img class="browseimg" src="choker_browse.jpg" alt="Choker Necklace">
+<div class="browsedisp"><img id="nolink" class="browseimg" src="choker_browse.jpg" alt="Choker Necklace">
 <p class="description">Choker Necklace. A diamond choker necklace would be an amazing addition to your outfit. </p>
 </div>     
     
 <br>
-        <!--Gallery of accessories with their descriptions--> 
-        <a id="Accessories"><h2>Accessories</h2></a>
+    <a id="Accessories"><h2>Accessories</h2></a>
     
 <br> 
-<div class="browsedisp"><img class="browseimg" src="rings_browse.jpg" alt="Rings">
+<div class="browsedisp"><img id="nolink" class="browseimg" src="rings_browse.jpg" alt="Rings">
 <p class="description">Crystal Rings. These awesome rings are the perfect acceessory to have.</p>
 </div>    
 
 <br>
-<div class="browsedisp"><img class="browseimg" src="sunglasses_browse.jpg" alt="Sunglasses">
+    <div class="browsedisp"><a href="sunglasses_page.html"><img class="browseimg" src="sunglasses_browse.jpg" alt="Sunglasses"></a>
 <p class="description">Sunglasses. Show off to your friends with these cool sunglasses. Click for more colours.</p>
 </div> 
 
 <br>    
-<div class="browsedisp"><img class="browseimg" src="back_earrings_browse.jpg" alt="Back Earings">
+    <div class="browsedisp"><a href="back_earrings_page.html"><img class="browseimg" src="back_earrings_browse.jpg" alt="Back Earings"></a>
 <p class="description">Back Earrings. New and different fabulous earrings. Click the image for a silver design.</p>
 </div>  
-
-<br>
-        <!--Gallery of more with their descriptions-->    
-        <a id="More"><h2 id="more">More</h2></a>
+    
+    <a id="Others"><h2 id="more">Other</h2></a>
     
 <br> 
-<div class="browsedisp"><img class="browseimg" src="unicorn_pool_browse.jpg" alt="Unicorn Pool Cup">
+    <div class="browsedisp"><a href="unicorn_pool_cup_page.html"><img class="browseimg" src="unicorn_pool_browse.jpg" alt="Unicorn Pool Cup"></a>
 <p class="description">Unicorn Pool Cup. Do you ever want a drink when in the pool? Well now you can have one.</p>
 </div>    
 
 <br>
-<div class="browsedisp"><img class="browseimg" src="brushes_browse.jpg" alt="Makeup Brushes">
+    <div class="browsedisp"><a href="brushes.html"><img class="browseimg" src="brushes_browse.jpg" alt="Makeup Brushes"></a>
 <p class="description">Makeup Brushes. An amazing and gorgeous design that will make all your friends jealous.</p>
 </div> 
 
 <br>    
-<div class="browsedisp"><img class="browseimg" src="slippers_browse.jpg" alt="Unicorn Slippers">
+<div class="browsedisp"><img id="nolink" class="browseimg" src="slippers_browse.jpg" alt="Unicorn Slippers">
 <p class="description">Unicorn Slippers. Style your feet with these cute and cuddly slippers.</p>
 </div>      
 </body>
